@@ -27,6 +27,7 @@ ul {
 .page-header {
   background-color: var(--bg-color-white);
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 .container {
   width: 1200px;
@@ -90,6 +91,22 @@ ul {
 .site-nav .link.current {
   color: var(--text-color-blue);
 }
+
+.studio::after,
+.portfolio::after {
+  content: '';
+  min-width: 48px;
+  height: 4px;
+
+  border-radius: 2px;
+  display: block;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-blue);
+  background-size: inherit;
+  margin-top: 28px;
+}
+
 .link:hover {
   color: var(--text-color-blue);
 }
@@ -342,6 +359,29 @@ ul {
   background: #ffffff;
   height: 428px;
 }
+.product {
+  position: relative;
+}
+.product-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  bottom: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .section-third .title {
   font-family: Roboto;
   font-style: normal;
