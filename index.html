@@ -45,7 +45,14 @@
     <main>
         <section class="section-hero">
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <a href="" class="button-hero">Заказать услугу</a>
+                <button class="button-hero btn" data-modal-open type="button">Заказать услугу</button>
+                
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sapiente iste provident, libero dolore fugit et magnam at perspiciatis, odit aspernatur consequatur quidem tempore cumque laboriosam minima facere porro fuga.</p>
+                        <button data-modal-close class="button-text">Закрыть</button>
+                    </div>
+                </div>
          </section>
         
 
@@ -274,7 +281,8 @@
     </div>
 
 </footer>
-    
+<script src="./js/modal.js"></script>
+
 </body>
 
 
